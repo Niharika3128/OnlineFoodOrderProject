@@ -1,0 +1,25 @@
+
+#title{
+    text-align: center;
+    font-size: 55px;
+    font-family: "Bauhaus 93";
+    background-color: red;
+    color: white;
+    text-shadow: black 5px 5px 3px;
+}
+
+
+#common-table{
+    text-align: center;
+    border-top: 100px solid transparent;
+    border-left: 500px solid transparent;
+}
+
+#admin-sign-in{
+    color: white;
+    font-size: 30px;
+    background-color: dodgerblue;
+    padding-top: 10px;
+    font-family: 'Agency FB';
+    border-radius: 20px;
+}

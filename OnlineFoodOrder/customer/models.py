@@ -1,7 +1,7 @@
 from django.db import models
 
 from admin.models import CityModel
-from vendor.models import VendorRegistration,FoodTypeModel,FoodItemModel
+from vendor.models import VendorRegistration,FoodItemModel
 
 
 class CustomerRegistration(models.Model):
