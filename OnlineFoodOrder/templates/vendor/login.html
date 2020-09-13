@@ -1,19 +1,20 @@
 {% extends 'common.html' %}
 {% block common %}
+    {% load static %}
     <head>
-    <title>Admin Login</title>
+    <title>Vendor Login</title>
     </head>
 <div class="login-box" style="padding-top: 100px;">
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg" id="admin-sign-in">
-          Admin Sign In
+          Vendor Sign In
       </p>
         <p></p>
         <p></p>
 
-      <form action="{% url 'admin_login_check' %}" method="post">
+      <form action="{% url 'vendor_login_check' %}" method="post">
           {% csrf_token %}
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="Username" name="username">
@@ -50,6 +51,12 @@
 
       <p class="mb-1">
         <a href="forgot-password.html">I forgot my password</a>
+      </p>
+
+        <p class="mb-1" style="text-align: center;border-radius: 10px;padding-top: 20px">
+        <a href="{% url 'open_register' %}">
+            <img src="{% static 'images/RegisterHere.jpg' %}" width="250" height="70" style="border-radius: 10px">
+        </a>
       </p>
         {% if error %}
         <p style="color: white;font-family: 'Agency FB';font-size: 30px;background-color: red;padding:6px;border-radius: 5px">

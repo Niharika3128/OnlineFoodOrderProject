@@ -9,11 +9,6 @@
 }
 
 
-#common-table{
-    text-align: center;
-    border-top: 100px solid transparent;
-    border-left: 500px solid transparent;
-}
 
 #admin-sign-in{
     color: white;
@@ -22,4 +17,11 @@
     padding-top: 10px;
     font-family: 'Agency FB';
     border-radius: 20px;
+}
+
+#error_message{
+    font-family: "Agency FB";
+    font-size: 20px;
+    color: red;
+    background-color: white;
 }

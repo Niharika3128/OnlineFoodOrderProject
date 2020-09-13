@@ -15,7 +15,14 @@ Including another URLconf
 """
 # from django.contrib import admin
 from django.urls import path
+from django.views.generic import TemplateView
+from vendor import views
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
+    path('',TemplateView.as_view(template_name='vendor/login.html'),name='vendor_main'),
+    path('open_register/',TemplateView.as_view(template_name='vendor/register.html'),name='open_register'),
+    path('vendor_login_check/',views.vendorLoginCheck,name='vendor_login_check'),
+    path('welcome/',views.vendor_home,name='welcome'),
+    path('save_vendor/',views.save_vendor,name='save_vendor'),
+
 ]
